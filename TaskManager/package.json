@@ -1,0 +1,19 @@
+{
+  "name": "Task Manager",
+  "version": "1.0.0",
+  "description": "Task Manager",
+  "main": "app.js",
+  "scripts": {
+    "devServer": "nodemon app.js"
+  },
+  "author": "expitc",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
