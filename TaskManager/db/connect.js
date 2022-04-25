@@ -12,8 +12,9 @@ mongoose
 // so better we exports a modules function then we use variables to take that function module on app
 // then running that connectDB function that will invoke server to running if it's connect to DB
 const connectDB = (uri) => {
-  return mongoose
-    .connect(uri)
+    return mongoose
+        .connect(uri)
+        .then(() => console.log('MongoDB CONNECTED'));
 };
 
 module.exports = connectDB;
