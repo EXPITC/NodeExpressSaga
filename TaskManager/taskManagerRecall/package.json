@@ -1,0 +1,19 @@
+{
+  "name": "taskmanagerrecall",
+  "version": "1.0.0",
+  "description": "recall what was made for longterm memorize and better understanding",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "author": "expitc",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "mongoose": "^6.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
