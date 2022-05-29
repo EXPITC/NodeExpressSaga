@@ -12,6 +12,7 @@ const {
 
 const defaultRoute = '/api/v1'
 
+//router path
 router.route(defaultRoute+'/tasks').get(getTasks).post(newTask)
 router.route(defaultRoute + '/task/:id').get(getTask).patch(editTask).delete(deleteTask)
 router.route(defaultRoute +'/tasks/active').get(activeTask)

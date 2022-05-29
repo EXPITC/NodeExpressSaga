@@ -15,6 +15,7 @@ const start = async () => {
   try {
     console.log("connecting to db")
     await connectDB(process.env.MONGO_URI)
+    
     console.log('db connected')
     app.listen(port,()=> console.log('https:localhost:'+port));
   } catch (err) {

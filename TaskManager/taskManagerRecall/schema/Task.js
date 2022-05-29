@@ -1,21 +1,19 @@
-const { default: mongoose } = require("mongoose");
+const { default: mongoose } = require('mongoose');
 
-
-const taskSchema = new mongoose.Schema({
+const taskSchema = new mongoose.Schema(
+  {
     name: {
-        type: String,
-        required: [true, 'must provide a name'],
-        trim: true,
-        maxlength: [20, 'only allow up to 20 characters']
+      type: String,
+      required: [true, 'must provide a name'],
+      trim: true,
+      maxlength: [20, 'only allow up to 20 characters'],
     },
     completed: {
-        type: Boolean,
-        default: false,
+      type: Boolean,
+      default: false,
     },
-    date: {
-        type: Date,
-        default: Date.now()
-    }
-})
+  },
+  { timestamps: true },
+);
 
-module.exports = mongoose.model('Task', taskSchema)
+module.exports = mongoose.model('Task', taskSchema);
